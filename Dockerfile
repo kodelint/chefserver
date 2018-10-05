@@ -11,4 +11,4 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 COPY run.sh configure_chef.sh /usr/local/bin/
 VOLUME /var/log
-CMD ["run.sh"]
+CMD ["/usr/local/bin/run.sh"]
